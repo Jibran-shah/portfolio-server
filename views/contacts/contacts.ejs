@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="/styles/resets.css"/>
+    <link rel="stylesheet" href="/styles/contacts.css"/>
+</head>
+<body>
+    <div class="Contacts">
+        <%contacts.map((contact)=>{%>
+            <div class="Contact">
+                <h1><%=contact.user.name%></h1>
+                <h3><%=contact.user.email%></h3>
+                <h2><%=contact.user.subject%></h2>
+                <P>"<%=contact.message%>"</P>
+            </div>
+        <%})%>  
+    </div>
+</body>
+</html>
